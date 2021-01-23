@@ -34,11 +34,9 @@ C_DEFINES := -DCONFIG_LOG_COLORS \
 	-DCONFIG_LOG_ENABLE -DCONFIG_LOG_LEVEL=LOG_VERBOSE -DDEBUG=1 \
 	-DLOG_KERNEL -DLV_CONF_INCLUDE_SIMPLE -D__riscv64 
 
-C_INCLUDES := -I/home/wuliyong/Documents/kendryte-standalone-sdk-0.5.6/lib/bsp/include \
-	-I/home/wuliyong/Documents/kendryte-standalone-sdk-0.5.6/lib/drivers/include \
-	-I/home/wuliyong/Documents/kendryte-standalone-sdk-0.5.6/lib/utils/include 
-
-
+C_INCLUDES := -Ilib/bsp/include \
+	-Ilib/drivers/include \
+	-Ilib/utils/include 
 
 SOURCE := \
 	src/crt.S \
